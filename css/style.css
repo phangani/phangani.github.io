@@ -1,0 +1,142 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #F4F4F4;        
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header ul{
+    margin:0;
+    padding:0;
+}
+
+/* Header **/
+header{
+    width:100%;
+    background:#35424a;
+    color:#ffffff;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-bottom:#e8491d 3px solid;
+}
+
+header img{
+    margin:0;
+    padding:0;
+    min-height:100px;
+    max-height:100px;
+}
+
+
+header a{
+color: #ffffff;
+text-decoration:none;
+text-transform: uppercase;
+font-size:16px;
+
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+    
+}
+
+header nav{
+    float:right;
+    margin-top:50px;
+}
+
+header a:hover{
+    color:#F80606;
+    font-weight:bold; 
+}
+    
+
+/*Showcase */
+#showcase{
+    min-height:400px;
+    background:url("../img/Main_showcase.jpg") no-repeat 0;
+    text-align:center;
+    color:#150755;
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+    font-size:20px;
+}
+
+/* Boxes */
+#boxes h1{
+    text-align:center;
+}
+
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    float:left;
+    text-align: center;
+    width:30%;
+    padding:10px;
+}
+
+#boxes .box img{
+    float:center;
+    min-width:250px;
+    overflow: hidden;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align: center;
+}
+
+/*from tours.html*/
+
+#min-col img{
+    width:75%;
+    min-width:250px;
+    
+}
+
+/* Media Queris */
+@media(max-width: 768px){
+    header logo,
+    header nav,
+    header nav li,
+    #boxes .box,
+    #boxes .box img,
+    article#main-col,{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom:20px;
+    }
+    #showcase h1{
+        margin-top:40px;
+    }
+    
+}
+
+
