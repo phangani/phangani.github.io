@@ -1,93 +1,373 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="500">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="local tours in Georgia, Tbilisi">
-    <meta name="keywords" content="local tours in Georgia,
-                affordable tours in Tbilisi, day tours in mtskheta">
-    <meta name="athor" content="Levani Phangani">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--facebook-->
-    <title>Join Georgia | Welcome</title>
-  </head>
-
-    <body> 
-      <header>
-        <div class="container">
-                    
-            <span class="logo">
-                <a href="./index.html">
-                  <img src="./img/LOGO_JG.png" alt="logo">
-                </a>
-              </span>
-          
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="tours.html">Tours</a></li>
-              <li><a href="souvenirs.html">Souvenirs</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-              <li><a>(+995) 514 555 055</a></li>
-              <a id="f-icon" href="https://www.facebook.com/joingeorgia/" alt="facebook" target="_blank"><i style="font-size:48px" class="fa">&#xf082;</i></a>
-            </ul>
-          </nav>
-          
-        </div>
-      </header>
-
-      <section id="showcase">
-        <div class="container">
-            <h1>Join Georgian Experience</h1>
-            <p>we know what you are looking for!</p>
-        </div>
-      </section>
+<header>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
       
-      <section id="boxes">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/gudauri1.jpg" alt="poto" width=100%>
+            <div class="carousel-caption">
+              <h1>Gudauri</h1>
+              <p>Your Ski destination!</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/sveti.jpg" alt="poto" width=100%>
+            <div class="carousel-caption">
+              <h1>Sveti</h1>
+              <p>The most amazing place!</p>
+            </div>
+          </div>
+      
+          <div class="item">
+            <img src="img/tbilisi1.jpg" alt="poto" width=100%>
+            <div class="carousel-caption">
+              <h1>Tbilisi</h1>
+              <p>You'll love this city!</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left">
+          <span class="sr-only">Previous
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right">
+          <span class="sr-only">Next
+        </a>
+      </div>
+
+      <nav class="navbar navbar-default">
         <div class="container">
-          <div>
-            <h1>The Most Popular Tours:</h1>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img class="logo img-circle img-responsive" src="img/LOGO_JG.png" alt="company logo"></a>
           </div>
-          <div class="box">
-              <a href="./tours.html#Tbilisi"><img src="./img/Tbilisi_main1.jpg" alt="photo of Tbilisi"
-              height=25% width=25%></a>
-              <h3>Tbilisi</h3>
-              <p>This tour to Tbilisi is about exploring a key-city in the heart of the Caucasus. Romantic and cosy city with rich history attracts thousands of travellers from all over the world. </p>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#About-Georgia">About Georgia</a></li>
+              <li><a href="#Local-Tours">Local Tours</a></li> 
+              <li><a href="#Local-Drivers">Local Drivers</a></li> 
+              <li><a href="#Accommodations">Accommodations</a></li> 
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
           </div>
-          <div class="box">
-              <a href="./tours.html#Mtskheta"><img src="./img/mtskheta_main.jpg" alt="photo of Tbilisi"
-              height=25% width=25%></a>
-              <h3>Mtskheta</h3>
-              <p>Visit the modern and ancient capitals of Georgia in a one-day tour to Tbilisi and Mtskheta with an eventful itinerary.</p>
-          </div>
-          <div class="box">
-              <a href="./tours.html#Funicular"><img src="./img/Funicular.jpg" alt="photo of Tbilisi"
-              height=25% width=25%></a>
-              <h3>Funicular Restaurant</h3>
-              <p>Mtatsminda is the mountain topped by the 300 m-high TV mast that overlooks central Tbilisi. High above Tbilisi you will find the most stylish center for food and drink in the city: the Funicular Restaurant Complex.</p>
-          </div>
-       </div>
-      </section>
+        </div>
+      </nav>
+    </header>
 
-      <ins class="bookingaff" data-aid="1426553" data-target_aid="1426532" data-prod="sbp" data-width="1100" data-height="400" data-lang="en-US" data-cc1="ge" data-df_num_properties="3">
-    <!-- Anything inside will go away once widget is loaded. -->
-    <a href="//www.booking.com?aid=1426532">Booking.com</a>
-</ins>
-<script type="text/javascript">
-    (function(d, sc, u) {
-      var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = u + '?v=' + (+new Date());
-      p.parentNode.insertBefore(s,p);
-      })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
-</script>
+<!-- Container (About Georgia) -->
+    <div id="About-Georgia" class="container-fluid">
+        <h1 >About Georgia</h1>
+        <div class="row">
+          <div class="col-sm-6">
+          <h3>Do you know that?</h3>
+          <!--<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/IfKXlNffoGI?rel=0" frameborder="0" allowfullscreen></iframe>-->
+          <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IfKXlNffoGI?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+            <!--<ol>
+            <li>Cradle of Wine – archaeologists discovered art of winemaking in Georgia 8,000 years ago;</li>
+            <li>A Unique Alphabet - There are just 14 independent alphabets in the world and Georgian is one of them;</li>
+            <li>UNESCO Heritage sites - Georgian ancient architecture provides numerous listed buildings</li>
+            <li>Europe’s highest settlement in Georgia - Ushguli is recognized as the highest settlement in Europe, set at altitudes between 2,086 and 2,200 meters above sea level.</li>
+            <li>First European Civilization - Recent excavations of Dmanisi have revealed an extraordinary record of the earliest hominid dispersal beyond Africa (1,75 million years ago).</li>
+            <li>Flora and Fauna – Georgia is one of the most ecologically diverse countries in the world, with climatic zones ranging from subtropical to high alpine to semi-desert.</li>
+            <li>Endless Tourism Possibilities</li>
+            <li>Summer sea and Winter Ski resorts - Georgia is a year-round destination. In Georgia, you can swim in the sea as late as November. After that, why not head to the mountains, where there is guaranteed snow until late April</li>
+            <li>Mountains and Trekking - Georgia’s High Caucasus Mountains are comparable to the European Alps and by far less crowded. Access to peaks like Mount Shkhara (5,201 meters) and Mount Ushba (4,710 meters)</li>
+            <li>Rapid development - The Georgian economy is one of the fastest growing in the world. The New York Times ranked Georgia 6-th among 52 best countries for the tourism destination.</li>
+            <li></li>
+          </ol>-->
+         </div>
+         <div class="col-sm-6">
+          <h3>More fun review about Georgia</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YWXvDxovfM4?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/YWXvDxovfM4?rel=0" frameborder="0" allowfullscreen></iframe>-->
+         </div>
+        </div>
+        <div class="row">
+         <div class="col-sm-12">
+          <p class="text-right"><a href="#">Learn More</a></p>
+         </div>
+        </div>
+      </div>
+    </div>
 
-      <footer>
-        <p>Join Georgia, Copyright &copy; 2017</p>
-      </footer>
-    	
-    </body>
+<!-- Container (Local Tours) -->
+      <div id="Local-Tours" class="container-fluid">
+        <h1>Local Tours</h1>
+        <h3 class="text-center">Explore Georgia's Popular one day Tours with locals</h3>
+        <div class="col-sm-4">
+          <a href="tours/Tbilisi Highlights Half Day Walking Tour.html"><img src="img/onedaytourintbilisi.jpg" class="img-thumbnail" alt="Day tour in Tbilisi"></a>
+            <h3 class="text-center"><a href="tours/Tbilisi Highlights Half Day Walking Tour.html">Tbilisi Highlights Half Day Walking Tour</a></h3>
+            <p class="text-justify">This tour to Tbilisi is about exploring a key-city in the heart of the Caucasus. Romantic and cosy city with rich history attracts thousands of travellers from all over the world</p>
+        </div>
+        <div class="col-sm-4">
+                <a href="tours/One Day Tour to Tbilisi and Mtskheta.html"><img src="img/onedaytourinmtskheta.jpg" class="img-thumbnail" alt="Day tour in Mtskheta"></a>
+                <h3 class="text-center"><a href="tours/One Day Tour to Tbilisi and Mtskheta.html">One Day Tour to Tbilisi and Mtskheta</a></h3>
+                <p class="text-justify">Visit  the modern and ancient capitals of Georgia in a one-day tour  to Tbilisi and Mtskheta with an eventful itinerary. Both cities are rich in landmarks and historic sites.</p>
+        </div>
+        <div class="col-sm-4">
+                <a href="tours/Dinner in Funicular Restaurant Complex at Mtatsminda Park.html"><img src="img/funicularrestaurant.jpg" class="img-thumbnail" alt="Day tour in Funicular Mtamtsminda mountain"></a>
+                <h3 class="text-center"><a href="tours/Dinner in Funicular Restaurant Complex at Mtatsminda Park.html">Dinner in Funicular Restaurant Complex at Mtatsminda Park</a></h3>
+                <p class="text-justify">Mtatsminda is the mountain topped by the 300 m-high TV mast that overlooks central Tbilisi. High above Tbilisi you will find the most stylish center for food and drink in the city.</p>
+        </div>
+         <!--<div class="col-sm-12">
+                <p class="text-right"><a href="#">More Tours</a></p>
+        </div>-->
+      </div>
+
+<!-- Container (Local Drivers) -->    
+      <div id="Local-Drivers" class="container-fluid">
+        <h1 class="text-center">Local Drivers</h1>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="text-center">Why you should hire local driver with the transport?</h3>
+            <p class="text-center text-justify">Georgia is a country where people drive with left or with right side car. It makes roads messy and little difficult for visitors.
+            If you want to relax and dont be stressed on the roads, the best practise, to explore the country, is to hire local profesional driver with the car. 
+            If you dont believe as, ask someone who experienced the driving in Georgia and everything will be more clear. cheers:)</p>
+          </div>   
+          <div class="col-sm-12">
+                <p class="text-center"><img src="img/drivers.jpg" class="img-thumbnail" alt="transport potoes"></p>
+          </div>
+          <div class="col-sm-12">  
+           <div class="table-responsive">          
+                    <table class="text-center" style="height: 300px; max-width: 600px; margin-left: auto; margin-right: auto;" border="0">
+                            <tbody>
+                            <tr>
+                            <td><strong>Number of passengers</strong></td>
+                            <td><strong>Car type</strong></td>
+                            <td><strong>Price per day</strong></td>
+                            </tr>
+                            <tr>
+                            <td>1-3 PAX</td>
+                            <td>Sedan / Off-road</td>
+                            <td>50$</td>
+                            </tr>
+                            <tr>
+                            <td>4-7 PAX</td>
+                            <td>Minivan</td>
+                            <td>70$</td>
+                            </tr>
+                            <tr>
+                            <td>8-20 PAX</td>
+                            <td>Mercedes-Benz Sprinter</td>
+                            <td>150$</td>
+                            </tr>
+                            <tr>
+                            <td>21-28 PAX</td>
+                            <td>Mini Bus</td>
+                            <td>200$</td>
+                            </tr>
+                            <tr>
+                            <td>29-50 PAX</td>
+                            <td>Bus</td>
+                            <td>300$</td>
+                            </tr>
+                            </tbody>
+                            </table>
+            </div>
+           </div>
+          </div>
+          <div class="col-sm-12">
+            <p class="text-center"><button class="btn btn-primary" type="button"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc9xpMUJ7-YBCgLDxFtxSY8obEVAijPZKL24GkQxXC3kgsumg/viewform" target="_blank">Book transport with the driver</a></button></p>
+          </div>
+        </div>
+      </div>
+
+<!-- Container (Accommodations) -->  
+      <div id="Accommodations" class="container-fluid">
+        <h1>Accommodations</h1>
+        <h3 class="text-center">Hire apartments from locals directly</h3>
+        <div class="col-sm-4">
+            <img src="img/hotels/zuba.jpg" class="img-thumbnail" alt="Day tour in Tbilisi">
+            <h3 class="text-center">Tbilisi - from 21 USD</h3>
+            <p class="text-justify">Appartment in the centre for 3 person, behind the building of Parliament of Georgia on main Rustaveli Avenue</p>
+            <p class="text-center"><button class="btn btn-primary" type="button"><a href="https://www.booking.com/hotel/ge/join-georgia-at-zubalashvili-bros-str-n2.en-us.html?aid=1426532;sid=03167cf29cc90297a2851882993164b8;checkin=2017-11-29;checkout=2017-11-30;dest_id=900047975;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A;sb_price_type=total;soh=1;soldout=0%2C0;srepoch=1511670678;srfid=1aa372da1060362edc37ad14b0d617d90a82bca2X1;srpvid=f7f61fca267900c7;type=total;ucfs=1&#no_availability_msg" target="_blank">View</a></button></p>
+            </div>
+        <div class="col-sm-4">
+                <img src="img/hotels/chit.jpg" class="img-thumbnail" alt="Day tour in Mtskheta">
+                <h3 class="text-center">Tbilisi - from 15 USD</h3>
+                <p class="text-justify">Cosy one bedroom appartment in the centre of Tbilisi in the old town</p>
+                <p class="text-center"><button class="btn btn-primary" type="button"><a href="https://www.booking.com/hotel/ge/join-georgia-at-chitadze-str-n6.en-us.html?aid=1426532;sid=03167cf29cc90297a2851882993164b8;checkin=2017-11-29;checkout=2017-11-30;dest_id=900047975;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A;sb_price_type=total;soh=1;soldout=0%2C0;srepoch=1511670829;srfid=58ba5c933b0e8225b9191ddb5675e3c5eecbb337X1;srpvid=57d82016dc0200b7;type=total;ucfs=1&#no_availability_msg" target="_blank">View</a></button></p>
+              </div>
+        <div class="col-sm-4">
+                <img src="img/hotels/ingo.jpg" class="img-thumbnail" alt="Day tour in Funicular Mtamtsminda mountain">
+                <h3 class="text-center">Tbilisi - from 28 USD</h3>
+                <p class="text-justify">Appartment near Liberty Square, maximum capacity for 4 person...</p>
+                <p class="text-center"><button class="btn btn-primary" type="button"><a href="https://www.booking.com/hotel/ge/ingorokva-n4-tbilisi.en-us.html?aid=1426532;sid=03167cf29cc90297a2851882993164b8;all_sr_blocks=204566801_95235771_1_0_0;checkin=2017-11-29;checkout=2017-11-30;dest_id=900047975;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;highlighted_blocks=204566801_95235771_1_0_0;hpos=1;no_rooms=1;room1=A;sb_price_type=total;srepoch=1511671280;srfid=8d8c6753830d0d2bd8c1fc403de6905c4033980fX1;srpvid=636320f784bc026d;type=total;ucfs=1&#hotelTmpl" target="_blank">View</a></button></p>
+              </div>
+         <div class="col-sm-12">
+                <h3 class="text-center">Or find suitable appartments from:</h3>
+        </div>
+
+        <div class="col-sm-12">
+          <ins class="bookingaff" data-aid="1426562" data-target_aid="1426532" data-prod="nsb" data-width="500" data-height="330" data-lang="en-US" data-df_num_properties="3">
+            <!-- Anything inside will go away once widget is loaded. -->
+            <a href="//www.booking.com?aid=1426532">Booking.com</a>
+        </ins>
+        <script type="text/javascript">
+            (function(d, sc, u) {
+              var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = u + '?v=' + (+new Date());
+              p.parentNode.insertBefore(s,p);
+              })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+        </script>
+        </div>
+      </div>
+
+<!-- Container (Contact) -->  
+      <div id="Contact" class="container bg-grey">
+            <h1 class="text-center">Contat</h1>
+            <div class="row">
+                    <div class="col-sm-5">
+                      <p>Contact us and we'll get back to you within 24 hours.</p>
+                      <p><span class="glyphicon glyphicon-map-marker"></span> Tbilisi, Georgia</p>
+                      <p><span class="glyphicon glyphicon-phone"></span> +995 514 555 055</p>
+                      <p><span class="glyphicon glyphicon-phone"></span> +995 555 011 010</p>
+                      <p><span class="glyphicon glyphicon-envelope"></span> joingeorgia@yahoo.com</p>
+                      <p><span class="fa fa-facebook"></span> https://www.facebook.com/joingeorgia/</p>
+                    </div>
+                    <div class="col-sm-7 slideanim">
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                      </div>
+                      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                      <div class="row">
+                        <div class="col-sm-12 form-group">
+                          <button class="btn btn-default pull-right" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Container (footer) --> 
+
+<footer>
+  <div class="container">
+<div class="row footer-largelist">
+<div class="col-md-3 col-xs-6">
+<h5>Experiences</h5>
+<ul>
+   <li><a href="https://georgia.travel/en_US/experience/adventure">Adventure</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/culture">Culture</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/leisure">Leisure</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/sun-beach">Sun &amp; Beach</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/Winter-Resorts-of-Georgia">Winter Resorts of Georgia</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/nightlife-and-entertainment">Nightlife and Entertainment</a></li>
+   <li><a href="https://georgia.travel/en_US/experience/National-Parks">National Parks</a></li>
+   </ul>
+</div>  
+
+<div class="col-md-3 col-xs-6">
+<h5>Events</h5>
+<ul>
+   <li><a href="https://georgia.travel/en_US/events?category=festivals">festivals</a></li>
+   <li><a href="https://georgia.travel/en_US/events?category=theatre">theatre</a></li>
+   <li><a href="https://georgia.travel/en_US/events?category=music">music</a></li>
+   <li><a href="https://georgia.travel/en_US/events?category=concerts">concerts</a></li>
+   <li><a href="https://georgia.travel/en_US/events?category=circus">circus</a></li>
+   </ul>
+</div> 
+
+<div class="clearfix visible-sm clearfix visible-xs"></div>
+
+<div class="col-md-3 col-xs-6">
+<h5>Destinations</h5>
+<ul>
+   <li><a href="https://georgia.travel/en_US/mtskheta-mtianeti/kazbegi">Kazbegi</a></li>
+   <li><a href="https://georgia.travel/en_US/shida-kartli/tbilisi">Tbilisi</a></li>
+   <li><a href="https://georgia.travel/en_US/kakheti/telavi">Telavi</a></li>
+   <li><a href="https://georgia.travel/en_US/mtskheta-mtianeti/mtskheta">Mtskheta</a></li>
+   <li><a href="https://georgia.travel/en_US/shida-kartli/gori">Gori</a></li>
+   <li><a href="https://georgia.travel/en_US/samegrelo/zugdidi">Zugdidi</a></li>
+   <li><a href="https://georgia.travel/en_US/imereti/kutaisi">Kutaisi</a></li>
+   </ul>
+</div> 
+
+<div class="col-md-3 col-xs-6">
+<h5>Articles</h5>
+<ul>
+   <li><a href="https://georgia.travel/en_US/articles?category=World About Us">World About Us</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=Uncategorized">Uncategorized</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=People About Georgia">People About Georgia</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=Video Gallery">Video Gallery</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=About Georgia">About Georgia</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=Backpacker's Diary">Backpacker's Diary</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=Bucket List">Bucket List</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=What's Up in Georgia">What's Up in Georgia</a></li>
+   <li><a href="https://georgia.travel/en_US/articles?category=Photo Gallery">Photo Gallery</a></li>
+   </ul>
+</div> 
+</div>
+
+
+
+<div class="row bottom-links hr_line">
+
+
+ <div class="col-xs-12">
+  <ul type="none" id="media-links" class="list-inline">
+   <li><a href="http://www.facebook.com/joingeorgia/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+   <li><a href="https://www.instagram.com/#/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+   <li><a href="http://vk.com/joingeorgia" target="_blank"><i class="fa fa-vk"></i></a></li>
+   <li><a href="https://www.youtube.com/#user/#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+   <li><a href="https://www.pinterest.com/#/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+   <li><a href="https://twitter.com/#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+  </ul>
+ </div>
+</div>
+
+<hr>
+
+</div class="col-xs-12">
+
+<p class="text-center">Join Georgia LLC</p>
+<p class="text-center">Copyright © 2017</p>
+<p class="text-center">Website made by <a href="http://phangani.com" title="Visit phangani.com">phangani.com</a></p>
+<p class="text-center"><a href="index.html" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a></p>
+</div>
+</footer>
+
+</body>
 </html>
-
