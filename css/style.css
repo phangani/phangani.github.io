@@ -151,3 +151,24 @@ footer {
     line-height: 1.428571429;
     color: #333;
 }
+
+.bookingaff {
+    margin:auto;
+}
+
+#mobiles {
+    display:none;
+}
+ 
+
+/* Media Queris */
+@media(max-width: 768px){
+    
+    #notmobiles {
+        display:none;
+    }
+     
+     
+     
+ }
+ 
