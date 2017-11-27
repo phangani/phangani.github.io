@@ -152,7 +152,7 @@ footer {
     color: #333;
 }
 
-.col-sm-12 forbooking {
+#forbooking {
     width: 300px;
     height: 150px;
     overflow: scroll;
