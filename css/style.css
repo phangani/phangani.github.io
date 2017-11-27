@@ -152,21 +152,18 @@ footer {
     color: #333;
 }
 
-.bookingaff {
-    margin:auto;
+.col-sm-12 forbooking {
+    width: 300px;
+    height: 150px;
+    overflow: scroll;
 }
 
-#mobiles {
-    display:none;
-}
  
 
 /* Media Queris */
 @media(max-width: 768px){
     
-    #notmobiles {
-        display:none;
-    }
+
      
      
      
